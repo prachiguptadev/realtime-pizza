@@ -1,28 +1,32 @@
 @import "./variables";
 
 body{
-    font-family: 'lato',sans-serif;
-    -webkit-font-smoothing:antialiased;
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
     color: $dark;
-    height: 400px;
 }
 
 nav li:last-child a {
-    background-color: $primary;
+    background: $primary;
+    &:hover {
+        background-color:  $primary-hover;
+    }
 }
 
-nav li a:hover{
-    color: $primary;
+nav li a {
+    transition: $smooth;
+    &:hover {
+        color: $primary;
+    }
 }
 
 section.hero {
-    background-color: $secondary;
+    background-color: $gray;
 }
 
 .size {
     background-color: $secondary;
 }
-
 .add-to-cart {
     border: 2px solid $primary;
     color: $primary;
@@ -37,9 +41,27 @@ section.hero {
     }
 }
 
+.btn-primary {
+    background-color: $primary;
+    transition: $smooth;
+
+    &:hover {
+        background-color: $primary-hover;
+    }
+}
 section.cart {
-    background-color: $secondary;
-    .amount{
+    background-color: rgb(218, 218, 218);
+    .amount {
         color: $primary;
+    }
+}
+section.login {
+    background-color: $secondary;
+    min-height: calc(100vh - 86px);
+    a {
+        color: $primary;
+        &:hover {
+            color: $primary-hover;
+        }
     }
 }

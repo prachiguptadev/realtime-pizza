@@ -9,7 +9,7 @@ const session = require("express-session");
 const flash = require("express-flash");
 const MongoDbStore = require("connect-mongo");
 const passport = require("passport");
-const PORT = process.env.PORT || 27017;
+const PORT = process.env.PORT || 28017;
 
 //Database connection
 const url = "mongodb://127.0.0.1:27017/pizzas";
